@@ -451,6 +451,7 @@ new_nodes
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
+openshift_disable_check=disk_availability,memory_availability
 ansible_ssh_user=$SUDOUSER
 ansible_become=yes
 openshift_install_examples=true
@@ -527,6 +528,7 @@ new_nodes
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
+openshift_disable_check=disk_availability,memory_availability
 ansible_ssh_user=$SUDOUSER
 ansible_become=yes
 openshift_install_examples=true
